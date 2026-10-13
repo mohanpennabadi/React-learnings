@@ -3,6 +3,7 @@ import Events from './Events.jsx'
 import Counter from './Usestate.jsx';
 import UserProfile from './Userprofile.jsx'
 import Events from './Events.jsx'
+import Counter from './Usestate.jsx';
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
     <p>this is my first react app</p>
     <Events/>
     <Footer/>
+    <Counter/>
     </>
   )
 }
