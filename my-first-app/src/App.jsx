@@ -2,6 +2,7 @@ import './App.css'
 import Events from './Events.jsx'
 import Counter from './Usestate.jsx';
 import UserProfile from './Userprofile.jsx'
+import Events from './Events.jsx'
 function App() {
   return (
     <>
@@ -11,7 +12,7 @@ function App() {
     <UserProfile name="mohan" role="Trainee" department="Engineering" />
     <p>this is my first react app</p>
     <Events/>
-    <Counter/>
+    <Footer/>
     </>
   )
 }
