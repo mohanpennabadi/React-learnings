@@ -22,4 +22,10 @@ function Header(){
  <p>this is header section</p> 
 </> 
 )}
+function Footer(){
+  return (
+<>
+ <p>this is footer section</p> 
+</> 
+)}
 export default App
