@@ -4,7 +4,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 import UserProfile from './Userprofile.jsx'
-
+import Events from './Events.jsx'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -15,6 +15,7 @@ function App() {
     <h2>welcome to react</h2>
     <UserProfile name="mohan" role="Trainee" department="Engineering" />
     <p>this is my first react app</p>
+    <Events/>
     <Footer/>
     </>
   )
