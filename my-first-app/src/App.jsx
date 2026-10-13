@@ -6,6 +6,7 @@ import './App.css'
 import UserProfile from './Userprofile.jsx'
 import Events from './Events.jsx'
 import Counter from './Usestate.jsx';
+import Implementation from './Implementation.jsx';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -19,6 +20,7 @@ function App() {
     <Events/>
     <Footer/>
     <Counter/>
+    <Implementation name="mohan" role="Trainee" department="Engineering" />
     </>
   )
 }
