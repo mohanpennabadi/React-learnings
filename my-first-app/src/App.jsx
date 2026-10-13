@@ -5,6 +5,7 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 import UserProfile from './Userprofile.jsx'
 import Events from './Events.jsx'
+import Counter from './Usestate.jsx';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -17,6 +18,7 @@ function App() {
     <p>this is my first react app</p>
     <Events/>
     <Footer/>
+    <Counter/>
     </>
   )
 }
