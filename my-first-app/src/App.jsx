@@ -3,6 +3,7 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
+import UserProfile from './Userprofile.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +13,7 @@ function App() {
     <Header/>
     <h1>first component</h1>
     <h2>welcome to react</h2>
+    <UserProfile name="mohan" role="Trainee" department="Engineering" />
     <p>this is my first react app</p>
     <Footer/>
     </>
