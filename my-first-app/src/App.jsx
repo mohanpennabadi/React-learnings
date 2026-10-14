@@ -3,6 +3,7 @@ import Events from './Events.jsx'
 import Counter from './Usestate.jsx';
 import UserProfile from './Userprofile.jsx'
 import Implementation from './Implementation.jsx';
+import Form from './form.jsx';
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
     <Events/>
     <Counter/>
     <Implementation name="mohan" role="Trainee" department="Engineering" />
+    <Form/>
     </>
   )
 }
