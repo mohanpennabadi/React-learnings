@@ -15,7 +15,7 @@ function App() {
     <Events/>
     <Counter/>
     <Implementation name="mohan" role="Trainee" department="Engineering" />
-    <Conditional username="mohan"/>
+    <Conditional username="mohan" connection={false} />
     </>
   )
 }
