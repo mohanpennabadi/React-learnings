@@ -22,7 +22,7 @@ function App() {
     <Footer/>
     <Counter/>
     <Implementation name="mohan" role="Trainee" department="Engineering" />
-    <Conditional username="mohan"/>
+    <Conditional username="mohan" connection={false} />
     </>
   )
 }
