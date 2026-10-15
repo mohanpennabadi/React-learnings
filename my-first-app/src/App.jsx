@@ -7,6 +7,7 @@ import UserProfile from './Userprofile.jsx'
 import Events from './Events.jsx'
 import Counter from './Usestate.jsx';
 import Implementation from './Implementation.jsx';
+import Conditional from './Conditional.jsx'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -21,6 +22,7 @@ function App() {
     <Footer/>
     <Counter/>
     <Implementation name="mohan" role="Trainee" department="Engineering" />
+    <Conditional username="mohan"/>
     </>
   )
 }
