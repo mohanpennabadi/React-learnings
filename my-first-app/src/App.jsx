@@ -9,13 +9,10 @@ function App() {
     </>
   )
 }
-<<<<<<< HEAD
-=======
 function Header(){
   return (
 <>
  <p>this is header section</p> 
 </> 
 )}
->>>>>>> c4a2f40 (rendering component in main component)
 export default App
