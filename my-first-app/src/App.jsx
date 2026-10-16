@@ -6,7 +6,6 @@ import Implementation from './Implementation.jsx';
 import Conditional from './Conditional.jsx'
 import List from './Listrendering.jsx';
 function App() {
-  const [count, setCount] = useState(0)
   const fruits=["mango","orange","guava","pine apple"]
   return (
     <>
