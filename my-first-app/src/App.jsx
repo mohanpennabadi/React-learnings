@@ -8,14 +8,8 @@ import Implementation from './Implementation.jsx';
 import Conditional from './Conditional.jsx'
 import List from './Listrendering.jsx';
 function App() {
-<<<<<<< HEAD
-=======
   const [count, setCount] = useState(0)
-<<<<<<< HEAD
   const fruits=["mango","orange","guava","pine apple"]
->>>>>>> d06db0e (dynamic list rendering)
-=======
->>>>>>> 447ef7c (list rendering)
   return (
     <>
     <Header/>
