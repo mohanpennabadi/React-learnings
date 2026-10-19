@@ -5,6 +5,7 @@ import UserProfile from './Userprofile.jsx'
 import Implementation from './Implementation.jsx';
 import Conditional from './Conditional.jsx'
 import List from './Listrendering.jsx';
+import Permanent from './Useeffect.jsx';
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
     <Implementation name="mohan" role="Trainee" department="Engineering" />
     <Conditional username="mohan" connection={false} />
     <List/>
+    <Permanent/>
     </>
   )
 }
