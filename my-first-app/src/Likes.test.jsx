@@ -1,5 +1,5 @@
 import {render,screen,fireEvent} from '@testing-library/react';
-import {describe,it} from 'vitest';
+import {describe,it,expect} from 'vitest';
 import LikeButton from './Likes';
 
 describe("check whether like functionality working properly or not",()=>{
