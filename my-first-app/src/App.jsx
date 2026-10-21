@@ -5,6 +5,7 @@ import Events from './Events.jsx'
 import Counter from './Usestate.jsx';
 import Implementation from './Implementation.jsx';
 import UserForm from './UserForm.jsx'
+import Fetch from './Fetch.jsx'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -20,6 +21,7 @@ function App() {
     <Counter/>
     <Implementation name="mohan" role="Trainee" department="Engineering" />
     <UserForm/>
+    <Fetch/>
     </>
   )
 }
