@@ -5,13 +5,12 @@ import Events from './Events.jsx'
 import Counter from './Usestate.jsx';
 import Implementation from './Implementation.jsx';
 import UserForm from './UserForm.jsx'
-import Fetch from './Fetch.jsx';
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    {/* <Header/>
+    <Header/>
     <h1>first component</h1>
     <h2>welcome to react</h2>
     <UserProfile name="mohan" role="Trainee" department="Engineering" />
@@ -20,8 +19,7 @@ function App() {
     <Footer/>
     <Counter/>
     <Implementation name="mohan" role="Trainee" department="Engineering" />
-    <UserForm/> */}
-    <Fetch/>
+    <UserForm/>
     </>
   )
 }
