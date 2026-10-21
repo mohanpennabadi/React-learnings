@@ -1,26 +1,47 @@
-import {render,screen,fireEvent} from '@testing-library/react';
-import {userEvent} from '@testing-library/user-event';
-import {describe,it,expect,vi,beforeEach,afterEach} from 'vitest';
-import Fetch from './Fetch.jsx';
+import { render, screen ,cleanup} from '@testing-library/react';
+import { describe, it, expect, vi, beforeEach,afterEach } from 'vitest';
+import Fetch from './Fetch';
 
-describe("all the tests to be done to check whether api works properly or not",()=>{
-    beforeEach(()=>{
-        vi.resetAllMocks();
-    })
-    it("test 1",async ()=>{
+describe('Fetch Component Integration Tests', () => {
+ beforeEach(() => {
+    vi.clearAllMocks();
+  });
+
+  afterEach(() => {
+    cleanup();
+    vi.restoreAllMocks();
+  });
+  it('fetches users from API and renders their names on the screen', async () => {
     const mockData = {
       users: [
-         { id: 1, firstName: 'Terry', lastName: 'Medhurst' },
-         { id: 2, firstName: 'Sheldon', lastName: 'Quigley' }       ]
+        { id: 1, firstName: 'Terry', lastName: 'Medhurst' },
+        { id: 2, firstName: 'Sheldon', lastName: 'Quigley' }
+      ]
     };
-      vi.spyOn(global, 'fetch').mockResolvedValue({
-     json: async () => mockData
+
+    vi.spyOn(globalThis, 'fetch').mockResolvedValue({
+      json: async () => mockData
     });
-    render(<Fetch/>)
-    const ele1=await screen.findByText(/Terry/i)
-    const ele2=await screen.findByText(/Sheldon/i)
-    expect(ele1).toBeInTheDocument();
-    expect(ele2).toBeInTheDocument();
-    })
-    
-})
+
+    render(<Fetch />);
+    const user1 = await screen.findByText('Terry Medhurst');
+    const user2 = await screen.findByText('Sheldon Quigley');
+
+    expect(user1).toBeInTheDocument();
+    expect(user2).toBeInTheDocument();
+  });
+
+  it('renders heading and zero list items when no users are returned', async () => {
+    vi.spyOn(globalThis, 'fetch').mockResolvedValue({
+      json: async () => ({ users: [] })
+    });
+
+    render(<Fetch />);
+
+    const heading = await screen.findByRole('heading', { name: /user list/i });
+    expect(heading).toBeInTheDocument();
+
+    const listItems = screen.queryAllByRole('listitem');
+    expect(listItems.length).toBe(0);
+  });
+});
