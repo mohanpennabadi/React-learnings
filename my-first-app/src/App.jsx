@@ -1,12 +1,10 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 import UserProfile from './Userprofile.jsx'
 import Events from './Events.jsx'
 import Counter from './Usestate.jsx';
 import Implementation from './Implementation.jsx';
+import UserForm from './UserForm.jsx'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -21,6 +19,7 @@ function App() {
     <Footer/>
     <Counter/>
     <Implementation name="mohan" role="Trainee" department="Engineering" />
+    <UserForm/>
     </>
   )
 }
